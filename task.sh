@@ -52,7 +52,7 @@ export NAME="Всем студентам"
 # запускаем task/dir2/hello.sh с переменной окружения NAME в качестве аргумента
 # вывод скрипта должен дописаться в файл task/dir1/summary.txt
 
-./dir2/hello.sh $NAME >> dir1/summary.txt
+./dir2/hello.sh "$NAME" >> dir1/summary.txt
 
 # перемещаем с переименованием task/dir1/summary.txt в task/Практическое задание
 
@@ -74,5 +74,3 @@ cd ..
 # удаляем директорию task со всем содержимым
 
 rm -rf task
-
-# просто комментарий, чтобы новый PR сделать
